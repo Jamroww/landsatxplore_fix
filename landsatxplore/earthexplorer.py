@@ -46,6 +46,21 @@ DATA_PRODUCTS_II = {
     "sentinel_2a": "5e83a42c6eba8084",
 }
 
+# Updates IDs after Sep 2022
+DATA_PRODUCTS_III = {
+    "landsat_tm_c1": "5e83d08fd9932768",
+    "landsat_etm_c1": "5e83a507d6aaa3db",
+    "landsat_8_c1": "5e83d0b84df8d8c2",
+    "landsat_tm_c2_l1": "5e83d0a05ee25348",
+    "landsat_etm_c2_l1": "5e83d0d02b146ae0",
+    "landsat_ot_c2_l1": "5e81f14f59432a27",
+    "landsat_tm_c2_l2": "5e83d1193824e4fc",
+    "landsat_etm_c2_l2": "5e83d12add5d4aa1",
+    "landsat_ot_c2_l2": "5e83d14f2fc39685",
+    "sentinel_2a": "5e83a42c6eba8084",
+}
+
+
 def _get_tokens(body):
     """Get `csrf_token` and `__ncforminfo`."""
     csrf = re.findall(r'name="csrf" value="(.+?)"', body)[0]
@@ -163,6 +178,9 @@ class EarthExplorer(object):
             filename = self._download(url, output_dir, timeout=timeout, skip=skip)
         except:
             url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS_II[dataset], entity_id=entity_id)
+            filename = self._download(url, output_dir, timeout=timeout, skip=skip)
+        except:
+            url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS_III[dataset], entity_id=entity_id)
             filename = self._download(url, output_dir, timeout=timeout, skip=skip)
         
         # Original code
