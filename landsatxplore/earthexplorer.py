@@ -51,12 +51,12 @@ DATA_PRODUCTS_III = {
     "landsat_tm_c1": "5e83d08fd9932768",
     "landsat_etm_c1": "5e83a507d6aaa3db",
     "landsat_8_c1": "5e83d0b84df8d8c2",
-    "landsat_tm_c2_l1": "5e83d0a05ee25348",
-    "landsat_etm_c2_l1": "5e83d0d02b146ae0",
-    "landsat_ot_c2_l1": "5e81f14f59432a27",
-    "landsat_tm_c2_l2": "5e83d1193824e4fc",
-    "landsat_etm_c2_l2": "5e83d12add5d4aa1",
-    "landsat_ot_c2_l2": "5e83d14f2fc39685",
+    "landsat_tm_c2_l1": "63231219fdd8c4e5",
+    "landsat_etm_c2_l1": "5e83d0d08fec8a66",
+    "landsat_ot_c2_l1": "5e81f14f92acf9ef",
+    "landsat_tm_c2_l2": "632312ba6c0988ef",
+    "landsat_etm_c2_l2": "632311068b0935a8",
+    "landsat_ot_c2_l2": "632210d4770592cf",
     "sentinel_2a": "5e83a42c6eba8084",
 }
 
