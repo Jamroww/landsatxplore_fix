@@ -177,11 +177,13 @@ class EarthExplorer(object):
             url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS[dataset], entity_id=entity_id)
             filename = self._download(url, output_dir, timeout=timeout, skip=skip)
         except:
-            url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS_II[dataset], entity_id=entity_id)
-            filename = self._download(url, output_dir, timeout=timeout, skip=skip)
-        except:
-            url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS_III[dataset], entity_id=entity_id)
-            filename = self._download(url, output_dir, timeout=timeout, skip=skip)
+            try:
+                url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS_II[dataset], entity_id=entity_id)
+                filename = self._download(url, output_dir, timeout=timeout, skip=skip)
+            except:
+                url = EE_DOWNLOAD_URL.format(data_product_id=DATA_PRODUCTS_III[dataset], entity_id=entity_id)
+                filename = self._download(url, output_dir, timeout=timeout, skip=skip)
+          
         
         # Original code
         #url = EE_DOWNLOAD_URL.format(
