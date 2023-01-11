@@ -6,9 +6,11 @@
 # Fork of landsatxplore to fix bug which prevents download of older data
 Due to hardcoded download links, when downloading older C2-L2 data an error is raised: `landsatxplore.errors.EarthExplorerError: Download is not available`. This is documented [here](https://github.com/yannforget/landsatxplore/issues/42) and [here](https://github.com/yannforget/landsatxplore/issues/45) and a solution is proposed. This solution is implemented in this fork with the aim to make the fixed package available to download until a permanent solution is introduced by the original author(s) of landsatxplore.
 
+*Update (Jan 11, 2023):* Dataset IDs in the USGS API have been changed again on Oct 19, 2022, which lead again to the abovementioned download errors. With the newest commit, I updated the Dataset IDs again, as documented [here](https://github.com/yannforget/landsatxplore/issues/92). New IDs can be retrieved from the test einvironment of the [Machine-to-machine API](https://m2m.cr.usgs.gov/api/test/json/). Select the Endnode ``dataset-download-options`` and submit the desired dataset name (e.g. ``landsat_ot_c2_l2``). The ID will show as "productID" in the response.
+
 *Another fix implemented:* In the beginning another error regarding the log-in tokens on Earth Explorer was discovered and [described](https://github.com/yannforget/landsatxplore/issues/76). The user was able to solve the issue by changing some lines in the [earthexplorer.py](https://github.com/yannforget/landsatxplore/pull/75/files). This fix is also nor implemented in this fork. As of now (April 2022) the fix has yet to be merged into the original landsatxplore by the original author(s).
 
-*Added compatability for Landsat 9 C2L2:* Compatability for the download of LS9 C2L2 was implemented as proposed by "faendeg" in [this pull request](https://github.com/yannforget/landsatxplore/pull/69).
+*Added compatability for Landsat 9 C2L2:* Compatability for the download of LS9 C2L2 was implemented as proposed by @faendeg in [this pull request](https://github.com/yannforget/landsatxplore/pull/69).
 
 ## Installation of landsatxplore_fix
 Delete any previous installation of landsatxplore using ``pip uninstall landsatxplore``.
