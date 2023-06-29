@@ -57,9 +57,9 @@ DATA_PRODUCTS_III = {
     #"landsat_tm_c2_l2": "632312ba6c0988ef",
     #"landsat_etm_c2_l2": "632311068b0935a8",
     #"landsat_ot_c2_l2": "632210d4770592cf",
-    "landsat_tm_c2_l2": "5e83d1193739fa4a",
-    "landsat_etm_c2_l2": "632311068b0935a8",
-    "landsat_ot_c2_l2": "632210d4770592cf",
+    "landsat_tm_c2_l2": "64481a502a0992d1",
+    "landsat_etm_c2_l2": "6448183ae73b2137",
+    "landsat_ot_c2_l2": "6448198cc7b442a4",
     "sentinel_2a": "5e83a42c6eba8084",
 }
 
