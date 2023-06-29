@@ -40,9 +40,12 @@ DATA_PRODUCTS_II = {
     "landsat_tm_c2_l1": "5e83d0a0f94d7d8d",
     "landsat_etm_c2_l1": "5e83d0d08fec8a66",
     "landsat_ot_c2_l1": "5e81f14f92acf9ef",
+    #"landsat_tm_c2_l2": "5e83d11933473426",
+    #"landsat_etm_c2_l2": "5e83d12aed0efa58",
+    #"landsat_ot_c2_l2": "5e83d14fec7cae84",
     "landsat_tm_c2_l2": "5e83d11933473426",
     "landsat_etm_c2_l2": "5e83d12aed0efa58",
-    "landsat_ot_c2_l2": "5e83d14fec7cae84",
+    "landsat_ot_c2_l2": "632210d4770592cf",
     "sentinel_2a": "5e83a42c6eba8084",
 }
 
@@ -59,7 +62,7 @@ DATA_PRODUCTS_III = {
     #"landsat_ot_c2_l2": "632210d4770592cf",
     "landsat_tm_c2_l2": "632312ba6c0988ef",
     "landsat_etm_c2_l2": "632311068b0935a8",
-    "landsat_ot_c2_l2": "632210d4770592cf",
+    "landsat_ot_c2_l2": "5e83d14fec7cae84",
     "sentinel_2a": "5e83a42c6eba8084",
 }
 
