@@ -26,7 +26,7 @@ DATA_PRODUCTS = {
     "landsat_tm_c2_l1": "5e83d0a0f94d7d8d",
     "landsat_etm_c2_l1": "5e83d0d0d2aaa488",
     "landsat_ot_c2_l1": "5e81f14ff4f9941c",
-    "landsat_tm_c2_l2": "5e83d11933473426",
+    "landsat_tm_c2_l2": "5e83d1193739fa4a",
     "landsat_etm_c2_l2": "5e83d12aada2e3c5",
     "landsat_ot_c2_l2": "5e83d14f30ea90a9",
     "sentinel_2a": "5e83a42c6eba8084",
