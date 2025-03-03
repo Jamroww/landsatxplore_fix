@@ -208,6 +208,8 @@ class API(object):
         longitude=None,
         latitude=None,
         bbox=None,
+        wrs_path=None,
+        wrs_row=None,
         max_cloud_cover=None,
         start_date=None,
         end_date=None,
@@ -257,9 +259,18 @@ class API(object):
             cloud_cover_filter = CloudCoverFilter(
                 max=max_cloud_cover, include_unknown=False
             )
+        metadata_filter = None
+        if wrs_path and wrs_row:
+            metadata_filter = [
+                MetadataValue("wrs_path", wrs_path),
+                MetadataValue("wrs_row", wrs_row),
+            ]
 
         scene_filter = SceneFilter(
-            acquisition_filter, spatial_filter, cloud_cover_filter, months=months
+            acquisition_filter,
+            spatial_filter,
+            cloud_cover_filter,
+            months=months
         )
 
         r = self.request(
